@@ -7,7 +7,7 @@ class Arithmetic{
     }
 }
 
-public class MethodReference3 {
+public class FunctionalPredfinedInterface {
     public static void main(String[] args) {
         BiFunction<Integer,Integer,Integer> adder=Arithmetic::add;
         System.out.println(adder.apply(10,20)); 

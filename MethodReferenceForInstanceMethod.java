@@ -3,13 +3,13 @@ interface Sayable{
     void say();
 }
 
-public class MethodReference5 {
+public class MethodReferenceForInstanceMethod {
     public void saySomething(){
         System.out.println("Hello, World!");
     }
 
     public static void main(String[] args) {
-        MethodReference5 obj = new MethodReference5();
+        MethodReferenceForInstanceMethod obj = new MethodReferenceForInstanceMethod();
         Sayable sayable=obj::saySomething;
         sayable.say();
     }

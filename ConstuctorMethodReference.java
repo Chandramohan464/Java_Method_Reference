@@ -9,7 +9,7 @@ class Message{
     }
 }
 
-public class MethodReference8 {
+public class ConstuctorMethodReference {
     public static void main(String[] args) {
         Messagable hello=Message::new;
         hello.getMessage("Hello");

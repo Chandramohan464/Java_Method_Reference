@@ -2,15 +2,15 @@
 
 import java.util.function.BiFunction;
 
-class Arithmetic{
+class ArithmeticCalculation{
     public int add(int a,int b){
         return a+b;
     }
 }
 
-public class MethodReference7 {
+public class MethodReferenceForBifunctionInterface {
     public static void main(String[] args) {
-        BiFunction<Integer,Integer,Integer> adder=new Arithmetic()::add;
+        BiFunction<Integer,Integer,Integer> adder=new ArithmeticCalculation()::add;
         System.out.println(adder.apply(10,20));
     }
 }

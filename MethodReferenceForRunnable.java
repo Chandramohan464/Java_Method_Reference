@@ -1,12 +1,12 @@
 //Reference to an Instance Method with Runnable interface
 
-public class MethodReference6 {
+public class MethodReferenceForRunnable {
     public void printMsg(){
         System.out.println("Hello, World!");
     }
 
     public static void main(String[] args) {
-        Thread t=new Thread(new MethodReference6()::printMsg);
+        Thread t=new Thread(new MethodReferenceForRunnable()::printMsg);
         t.start();
     }
 }

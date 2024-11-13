@@ -14,7 +14,7 @@ class Arithmetic{
     }
 }
 
-public class MethodReference4 {
+public class MethodReferenceForBifunction {
     public static void main(String[] args){
         BiFunction<Integer, Integer, Integer>adder1 = Arithmetic::add;  
         BiFunction<Integer, Float, Float>adder2 = Arithmetic::add;  

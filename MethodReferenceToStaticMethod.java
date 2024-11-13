@@ -3,13 +3,13 @@ interface Sayable{
     void say();
 }
 
-public class MethodReference1 {
+public class MethodReferenceToStaticMethod {
     public static void saySomething(){
         System.out.println("Hello there!");
     }
 
     public static void main(String[] args) {
-        Sayable sayable=MethodReference1::saySomething;
+        Sayable sayable=MethodReferenceToStaticMethod::saySomething;
         sayable.say();
     }
 }
